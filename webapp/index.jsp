@@ -11,7 +11,7 @@
 <%
 String uri = "http://localhost:9090/spring-rest-example";
 org.springframework.web.client.RestTemplate restTemplate = new org.springframework.web.client.RestTemplate();
-com.journaldev.spring.model.Employee emp = restTemplate.getForObject(uri+"/rest/emp/dummy", com.journaldev.spring.model.Employee.class);
+com.journaldev.spring.model.Employee emp = restTemplate.getForObject("/spring-rest-example-0.0.1-SNAPSHOT/rest/emp/dummy", com.journaldev.spring.model.Employee.class);
 %>
 
 <%="ID="+emp.getId()+",Name="+emp.getName()+",CreatedDate="+emp.getCreatedDate() %>
